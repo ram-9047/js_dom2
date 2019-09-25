@@ -13,7 +13,12 @@ document.querySelector(".todo").addEventListener("keyup", ()=>{
         console.log(document.querySelector(".list"))
         event.target.value = null
     }
+
     button.addEventListener("click", () => {
         event.target.parentElement.remove()
     })
+
+    var checkbox = document.createElement("input")
+    checkbox.type = "checkbox";
+    li.append(checkbox)
 })
